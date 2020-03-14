@@ -1,0 +1,15 @@
+server:
+  port: 9090
+
+spring:
+  boot:
+    admin:
+      discovery:
+        ignored-services: consul
+      context-path: bootadmin
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
